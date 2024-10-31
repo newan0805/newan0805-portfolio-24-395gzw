@@ -1,13 +1,13 @@
 // src/components/CanvasBackground.jsx
-import React, { useEffect, useRef } from 'react';
-import * as THREE from 'three';
+import React, { useEffect, useRef } from "react";
+import * as THREE from "three";
 
 const CanvasBackground = () => {
   const mountRef = useRef(null);
 
   useEffect(() => {
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x000000); // Pitch black background
+    scene.background = new THREE.Color(0x000000);
 
     const camera = new THREE.PerspectiveCamera(
       75,
@@ -106,12 +106,12 @@ const CanvasBackground = () => {
       ref={mountRef}
       className="absolute inset-0 -z-10"
       style={{
-        position: 'fixed',
+        position: "fixed",
         top: 0,
         left: 0,
-        width: '100%',
-        height: '100%',
-        pointerEvents: 'none',
+        width: "100%",
+        height: "100%",
+        pointerEvents: "none",
       }}
     />
   );
